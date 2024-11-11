@@ -5,16 +5,11 @@
 	Description: //write a program to find largest of two integers using function
 */
 
-
-
-
-
-
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
 
-int compare(a,b){
+int compare(int a,int b){
 	if(a>b) return a ;
 	else return b ;
 }
@@ -23,11 +18,12 @@ int compare(a,b){
 
 int main(){
 	
-	int a, b ,largest ; 
-	printf("Enter the value of a and b = ");
-	scanf("%d%d",&a,&b);
+	int a, b ,c,largest ; 
+	printf("Enter the value of a b c = ");
+	scanf("%d%d%d",&a,&b,&c);
 	
 	largest =compare(a,b);
+	largest = compare(largest,c);
 	printf("%d",largest);
 	
 	
