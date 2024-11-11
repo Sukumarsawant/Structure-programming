@@ -2,14 +2,14 @@
 	Name: Sukumar Sawant 
 	Copyright: SSS
 	Date: 11-11-24 16:17
-	Description: //write a program to find largest of two integers using function
+	Description: //write a program to find factorial using function
 */
 
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
 
-int fact(int n ){
+long fact(int n ){
 int fact =1 ,i; 
 for( i =1; i<=n;++i){
 	fact*=i;
@@ -22,7 +22,7 @@ int main(){
 int n ; 
 printf("Enter the value of n = ");
 scanf("%d",&n);
-printf("%d",fact(n));
+printf("%ld",fact(n));
 	
 	
 	
